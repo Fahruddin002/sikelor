@@ -13,7 +13,6 @@ import EventDetail from "./pages/EventDetail"
 import ArticleDetail from "./pages/ArticleDetail"
 import Collections from "./pages/Collections"
 import About from "./pages/About"
-import ApiStatusIndicator from "./components/ApiStatusIndicator"
 
 // Error Boundary Component
 class ErrorBoundary extends React.Component {
@@ -158,7 +157,6 @@ function App() {
     <ErrorBoundary>
       <div className="relative">
         <div data-page-content>{renderPage()}</div>
-        <ApiStatusIndicator />
       </div>
     </ErrorBoundary>
   )

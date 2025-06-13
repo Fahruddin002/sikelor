@@ -16,7 +16,6 @@ import {
   AlertCircle,
   CheckCircle,
 } from "../components/icons"
-import ApiStatusIndicator from "../components/ApiStatusIndicator"
 
 export default function Scan({ onNavigate }) {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -594,8 +593,9 @@ export default function Scan({ onNavigate }) {
           </div>
           {renderClassificationResults()}
         </div>
-      )
+      );
     }
+     
 
     if (isScanning) {
       return (
@@ -635,13 +635,12 @@ export default function Scan({ onNavigate }) {
               <button
                 onClick={isDirectScanActive ? stopDirectScan : handleDirectScan}
                 disabled={isScanning || isCameraOpen}
-                className={`flex items-center justify-center xl:justify-start gap-3 md:gap-4 w-full p-3 md:p-4 rounded-2xl text-white font-semibold transition-all duration-200 ${
-                  isDirectScanActive
+                className={`flex items-center justify-center xl:justify-start gap-3 md:gap-4 w-full p-3 md:p-4 rounded-2xl text-white font-semibold transition-all duration-200 ${isDirectScanActive
                     ? "bg-red-600 hover:bg-red-700"
                     : scanMode === "direct"
                       ? "bg-[#3a4e39]"
                       : "bg-[#475F45] hover:bg-[#3a4e39]"
-                } ${isScanning || isCameraOpen ? "opacity-50 cursor-not-allowed" : ""}`}
+                  } ${isScanning || isCameraOpen ? "opacity-50 cursor-not-allowed" : ""}`}
               >
                 {isDirectScanActive ? (
                   <X className="w-5 h-5 md:w-6 md:h-6" />
@@ -655,9 +654,8 @@ export default function Scan({ onNavigate }) {
               <button
                 onClick={handleTakePicture}
                 disabled={isScanning || isCameraOpen || isDirectScanActive}
-                className={`flex items-center justify-center xl:justify-start gap-3 md:gap-4 w-full p-3 md:p-4 rounded-2xl text-white font-semibold transition-all duration-200 ${
-                  scanMode === "camera" || isCameraOpen ? "bg-[#3a4e39]" : "bg-[#475F45] hover:bg-[#3a4e39]"
-                } ${isScanning || isCameraOpen || isDirectScanActive ? "opacity-50 cursor-not-allowed" : ""}`}
+                className={`flex items-center justify-center xl:justify-start gap-3 md:gap-4 w-full p-3 md:p-4 rounded-2xl text-white font-semibold transition-all duration-200 ${scanMode === "camera" || isCameraOpen ? "bg-[#3a4e39]" : "bg-[#475F45] hover:bg-[#3a4e39]"
+                  } ${isScanning || isCameraOpen || isDirectScanActive ? "opacity-50 cursor-not-allowed" : ""}`}
               >
                 <Camera className="w-5 h-5 md:w-6 md:h-6" />
                 <span className="text-sm md:text-base">{isCameraOpen ? "Kamera Aktif" : "Ambil Foto"}</span>
@@ -667,9 +665,8 @@ export default function Scan({ onNavigate }) {
               <button
                 onClick={handleUploadImage}
                 disabled={isScanning || isCameraOpen || isDirectScanActive}
-                className={`flex items-center justify-center xl:justify-start gap-3 md:gap-4 w-full p-3 md:p-4 rounded-2xl text-white font-semibold transition-all duration-200 ${
-                  scanMode === "upload" ? "bg-[#3a4e39]" : "bg-[#475F45] hover:bg-[#3a4e39]"
-                } ${isScanning || isCameraOpen || isDirectScanActive ? "opacity-50 cursor-not-allowed" : ""}`}
+                className={`flex items-center justify-center xl:justify-start gap-3 md:gap-4 w-full p-3 md:p-4 rounded-2xl text-white font-semibold transition-all duration-200 ${scanMode === "upload" ? "bg-[#3a4e39]" : "bg-[#475F45] hover:bg-[#3a4e39]"
+                  } ${isScanning || isCameraOpen || isDirectScanActive ? "opacity-50 cursor-not-allowed" : ""}`}
               >
                 <Upload className="w-5 h-5 md:w-6 md:h-6" />
                 <span className="text-sm md:text-base">Unggah Gambar</span>
@@ -685,11 +682,10 @@ export default function Scan({ onNavigate }) {
                 <button
                   onClick={capturePhoto}
                   disabled={!isVideoReady}
-                  className={`flex-1 p-3 md:p-4 rounded-2xl font-semibold transition-all duration-200 ${
-                    isVideoReady
+                  className={`flex-1 p-3 md:p-4 rounded-2xl font-semibold transition-all duration-200 ${isVideoReady
                       ? "bg-blue-600 text-white hover:bg-blue-700"
                       : "bg-gray-400 text-gray-600 cursor-not-allowed"
-                  }`}
+                    }`}
                 >
                   <div className="flex items-center justify-center gap-2">
                     <CameraFlash className="w-4 h-4 md:w-5 md:h-5" />
@@ -750,11 +746,10 @@ export default function Scan({ onNavigate }) {
               <button
                 onClick={handleAnalyze}
                 disabled={isScanning}
-                className={`w-full p-3 md:p-4 rounded-2xl font-semibold transition-all duration-200 ${
-                  isScanning
+                className={`w-full p-3 md:p-4 rounded-2xl font-semibold transition-all duration-200 ${isScanning
                     ? "bg-gray-400 text-gray-600 cursor-not-allowed"
                     : "bg-blue-600 text-white hover:bg-blue-700"
-                }`}
+                  }`}
               >
                 <span className="text-sm md:text-base">{isScanning ? "Mengklasifikasi..." : "Klasifikasi Gambar"}</span>
               </button>
@@ -796,7 +791,7 @@ export default function Scan({ onNavigate }) {
           <div className="flex-1 p-8 mx-16 md:p-6 xl:p-8 flex justify-center">
             <div
               className="bg-[#475F45] rounded-3xl h-[75%] w-[75%] flex items-center justify-center relative overflow-hidden transition-all duration-300"
-              style={{ minHeight: "400px", minWidth: "310px" }}
+              style={{ minHeight: "400px", minWidth: "310px"}}
               data-camera-area
             >
               {renderCameraContent()}
@@ -814,15 +809,12 @@ export default function Scan({ onNavigate }) {
             </div>
           </div>
         </div>
-
-        {/* API Status Indicator */}
-        <ApiStatusIndicator />
-
-        {/* Footer */}
-        <footer className="bg-[#394a37] text-white text-center py-4 mt-auto">
-          <p className="text-xs lg:text-sm">© 2025 Sikelor. All rights reserved.</p>
-        </footer>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-[#394a37] text-white text-center py-4 mt-auto">
+        <p className="text-xs lg:text-sm">© 2025 Sikelor. All rights reserved.</p>
+      </footer>
     </div>
   )
 }

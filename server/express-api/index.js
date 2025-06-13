@@ -90,19 +90,26 @@ app.post("/api/classify", upload.single("file"), async (req, res) => {
 })
 
 // Proxy endpoint untuk deteksi objek
-app.post("/api/detect", async (req, res) => {
+app.post("/api/detect", upload.single("file"), async (req, res) => {
   try {
-    const response = await axios.post(`${FASTAPI_BASE}/detect`, req.body, {
-      headers: {
-        "Content-Type": req.headers["content-type"],
-      },
+    const file = req.file
+    if (!file) return res.status(400).json({ error: "No file uploaded" })
+
+    const formData = new FormData()
+    formData.append("file", file.buffer, file.originalname)
+
+    const response = await axios.post(`${FASTAPI_BASE}/detect`, formData, {
+      headers: formData.getHeaders(),
     })
+
     res.json(response.data)
   } catch (err) {
     console.error("Error di /api/detect:", err.message)
     res.status(500).json({ error: "Gagal memproses deteksi objek" })
   }
 })
+
+app.use(cors())
 
 // Jalankan server proxy di port yang ditentukan oleh environment variable atau default ke 3001
 const PORT = process.env.PORT || 3001
