@@ -1,0 +1,74 @@
+{
+  "0": {
+    "nama": "Al-Qur'an Tulis Tangan",
+    "deskripsi": "Merupakan bukti peninggalan pengaruh budaya Islam di Sulawesi Tengah, khususnya di Lembah Palu. Keberadaannya menandakan bahwa ajaran Islam telah masuk ke wilayah ini sejak awal abad ke-17 dan masih dilestarikan hingga kini.",
+    "kategori": "Naskah Kuno",
+    "suku": "Islam Sulawesi Tengah",
+    "periode": "Abad ke-17",
+    "material": "Kertas dan tinta"
+  },
+  "1": {
+    "nama": "Dulang",
+    "deskripsi": "Wadah tradisional yang digunakan dalam tradisi makan bersama atau memamah sirih pinang. Umum dipakai oleh seluruh lapisan masyarakat pada upacara adat di wilayah Asia Tenggara dan Pasifik, termasuk Sulawesi Tengah.",
+    "kategori": "Peralatan Tradisional",
+    "suku": "Berbagai suku Sulawesi Tengah",
+    "periode": "Tradisional",
+    "material": "Kayu atau logam"
+  },
+  "2": {
+    "nama": "Miniatur Buho'",
+    "deskripsi": "Buho' adalah lumbung padi tradisional yang dibangun terpisah dari rumah Tambi. Memiliki struktur lebih terbuka dan berfungsi sebagai tempat penyimpanan padi masyarakat suku Lore dan Kaili.",
+    "kategori": "Arsitektur Tradisional",
+    "suku": "Lore dan Kaili",
+    "periode": "Tradisional",
+    "material": "Kayu dan bambu"
+  },
+  "3": {
+    "nama": "Miniatur Gampiri",
+    "deskripsi": "Gampiri adalah bangunan tradisional suku Kaili yang digunakan untuk menyimpan padi hasil panen. Miniatur ini merepresentasikan kearifan lokal dalam penyimpanan hasil pertanian.",
+    "kategori": "Arsitektur Tradisional",
+    "suku": "Kaili",
+    "periode": "Tradisional",
+    "material": "Kayu"
+  },
+  "4": {
+    "nama": "Miniatur Rumah Kataba",
+    "deskripsi": "Replika rumah tradisional Kataba, yang dulunya dibangun dan digunakan oleh masyarakat biasa dari suku Kaili yang tinggal di wilayah pesisir. Miniatur ini digunakan sebagai media edukasi budaya.",
+    "kategori": "Arsitektur Tradisional",
+    "suku": "Kaili",
+    "periode": "Tradisional",
+    "lokasi": "Pesisir Sulawesi Tengah"
+  },
+  "5": {
+    "nama": "Miniatur Rumah Palava",
+    "deskripsi": "Replika rumah tradisional Palava yang digunakan oleh masyarakat biasa dalam suku Kaili. Model rumah ini mencerminkan struktur bangunan adat masyarakat pedalaman Sulawesi Tengah.",
+    "kategori": "Arsitektur Tradisional",
+    "suku": "Kaili",
+    "periode": "Tradisional",
+    "lokasi": "Pedalaman Sulawesi Tengah"
+  },
+  "6": {
+    "nama": "Miniatur Rumah Tambi",
+    "deskripsi": "Tambi adalah rumah tradisional suku Lore yang tinggal di Lembah Bada, Behoa, dan Pekurehua (Napu). Miniatur ini berfungsi sebagai sarana pelestarian budaya dan edukasi arsitektur tradisional.",
+    "kategori": "Arsitektur Tradisional",
+    "suku": "Lore",
+    "periode": "Tradisional",
+    "lokasi": "Lembah Bada, Behoa, Napu"
+  },
+  "7": {
+    "nama": "Tempayan Kubur",
+    "deskripsi": "Bejana besar dari tanah liat atau keramik yang digunakan sebagai tempat penguburan oleh masyarakat kuno. Tempayan ini menjadi bukti praktik pemakaman kuno yang berkembang di beberapa daerah di Sulawesi Tengah.",
+    "kategori": "Arkeologi",
+    "suku": "Masyarakat Kuno Sulawesi Tengah",
+    "periode": "Prasejarah",
+    "material": "Tanah liat/keramik"
+  },
+  "8": {
+    "nama": "Wadah Kubur",
+    "deskripsi": "Gerabah yang digunakan sebagai tempat penguburan kedua (second burial) oleh masyarakat Suku Pamona pada zaman prasejarah. Umumnya digunakan setelah tulang jenazah dikumpulkan kembali untuk disimpan secara kolektif.",
+    "kategori": "Arkeologi",
+    "suku": "Pamona",
+    "periode": "Prasejarah",
+    "material": "Gerabah"
+  }
+}
